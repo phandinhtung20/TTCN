@@ -1,0 +1,61 @@
+body{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#header nav{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.19);
+    text-align: center;
+    text-transform: uppercase;
+}
+/*float right login/logout*/
+#list{
+  position: absolute;
+  right: 30px;
+}
+
+.fixed-top{
+    position: relative;
+}
+/*Footer*/
+.footer{
+  padding: 10px 0px;
+  text-align: right;
+  background-color: #F5F5F5;
+}
+
+.card{
+    margin: 0 auto;
+}
+/*login - register*/
+.card-img-top{
+    margin-top:10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/*home*/
+.jumbotron{
+    background: #A9A9A9 url(../image/of.jpg) center no-repeat;
+    color: white;
+}
+.content-day{
+  color: red;
+}
+.content-noti{
+  color: green;
+}
+.item{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+ /*Dashboard*/
+ .myjumbotron {
+     padding: 2rem 2rem !important;
+ }
+
+.sidebar .nav{
+  margin-bottom: 20px;
+}
