@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Home</title>
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/GCScss.css">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <link rel="stylesheet" href="cdn/bootstrap.min.css">
+    <script src="cdn/jquery-3.2.1.slim.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script> -->
+    <script type="text/javascript">
+      $(function() {
+        $('.check').prop('checked', true);
+        $('#btn').click(function(){
+          alert($('#value option:selected').val());
+        });
+      })
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" role="navigation">
+          <a href="#" class="navbar-brand">HỆ THỐNG QUẢN LÝ ĐIỂM</a>
+          <button type="button" class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#list">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="list">
+              <button type="button" class="btn btn-outline-success">LOGOUT</button>
+          </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+          <div class="container">
+            <h3 class="display-5">
+              Phan Đình Tùng (HS)
+            </h3>
+          </div>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Học sinh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Điểm của tôi <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Báo cáo điểm sai</a>
+            </li>
+          </ul>
+
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Giáo viên chủ nhiệm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Xem điểm lớp Chủ nhiệm</a>
+            </li>
+          </ul>
+
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Giáo viên bộ môn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Xem điểm lớp giảng dạy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cập nhật điểm</a>
+            </li>
+          </ul>
+
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Quản lý</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Xem điểm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Thống kê</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Xuất điểm</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="input-group-btn">
+              <select class="form-control" id="value">
+                <option value="aaa">Director aaaaa</option>
+                <option value="aab">Director bbbbb</option>
+                <option value="aac">Director ccccc</option>
+                <option value="aad">Director ddddd</option>
+              </select>
+              <button type="button" class="btn btn-primary" id="btn">Primary</button>
+            </div>
+          </nav>
+          <div class="container-fluid">
+            <table class="table table-striped text-center">
+              <thead>
+                <tr>
+                  <th>Component</th>
+                  <th>View</th>
+                  <th>View own</th>
+                  <th>Edit</th>
+                  <th>Edit own</th>
+                  <th>Add</th>
+                  <th>Add own</th>
+                  <th>Delete</th>
+                  <th>Delete own</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>User 1</td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                </tr>
+                <tr>
+                  <td>User 2</td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                </tr>
+                <tr>
+                  <td>User 3</td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                </tr>
+                <tr>
+                  <td>User 4</td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                </tr>
+                <tr>
+                  <td>User 5</td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                </tr>
+                <tr>
+                  <td>User 6</td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                </tr>
+                <tr>
+                  <td>User 7</td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                  <td>
+                    <input type="checkbox" class="check">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="cdn/popper.min.js"></script>
+    <script src="cdn/bootstrap.min.js"></script>
+  </body>
+</html>
