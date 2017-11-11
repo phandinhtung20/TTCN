@@ -59,3 +59,8 @@ body{
 .sidebar .nav{
   margin-bottom: 20px;
 }
+
+/*Set TKB*/
+select.form-control{
+    width: 100px;
+}

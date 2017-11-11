@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/mycss.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="cdn/bootstrap.min.css">
+  </head>
+  <body>
+    <div id="header">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" role="navigation">
+          <a href="#" class="navbar-brand">HỆ THỐNG QUẢN LÝ ĐIỂM</a>
+          <button type="button" class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#list">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="list">
+              <button type="button" class="btn btn-outline-success">LOGOUT</button>
+          </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+          <div class="container">
+            <h3 class="display-5">
+              Phan Đình Tùng (HS)
+            </h3>
+          </div>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Học sinh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Thời khóa biểu<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kết quả học tập</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Thông báo cá nhân</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Báo cáo</a>
+            </li>
+          </ul>
+
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Giáo viên chủ nhiệm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Thời khóa biểu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bảng điểm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Đánh giá học tập</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Xuất bảng điểm</a>
+            </li>
+          </ul>
+
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Giáo viên bộ môn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Thời khóa biểu dạy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bảng điểm các lớp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Chỉnh sửa điểm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nhập bảng điểm (excel)</a>
+            </li>
+          </ul>
+
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Quản lý</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Đăng thông báo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Xem/Xuất kết quả</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Cập nhật năm học</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Xem/thêm/xóa học sinh</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+          <div class="jumbotron text-center myjumbotron">
+            <h1 class="display-5">HỆ THỐNG QUẢN LÝ ĐIỂM TRƯỜNG XXX</h1>
+          </div>
+
+          <h2>TẠO MỚI THỜI KHÓA BIỂU</h2>
+          <form action="#" method="post">
+            <table>
+              <tr>
+                <td><label for="khoi">Chọn khối:</label></td>
+                <td><label for="lop">Chọn lớp:</label></td>
+              </tr>
+              <tr>
+                <td>
+                  <select class="form-control" id="khoi">
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="form-control" id="lop">
+                    <option>A1</option>
+                    <option>A2</option>
+                    <option>A3</option>
+                    <option>A3</option>
+                    <option>B1</option>
+                    <option>B2</option>
+                    <option>B3</option>
+                    <option>B4</option>
+                    <option>B5</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <br>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>THỨ 2</th>
+                    <th>THỨ 3</th>
+                    <th>THỨ 4</th>
+                    <th>THỨ 5</th>
+                    <th>THỨ 6</th>
+                    <th>THỨ 7</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1- Sáng</td>
+                    <td>
+                      Chào cờ
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2- Sáng</td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3- Sáng</td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4- Sáng</td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5- Sáng</td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      Sinh hoạt lớp
+                    </td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td>1- Chiều</td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2- Chiều</td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3- Chiều</td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      -
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4- Chiều</td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      -
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5- Chiều</td>
+                    <td>
+                      Chào cờ
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      -
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>-</option>
+                        <option value="1">Toán</option>
+                        <option value="2">Lý</option>
+                        <option value="3">Hóa</option>
+                        <option value="4">Sinh</option>
+                        <option value="5">Anh</option>
+                        <option value="6">Văn</option>
+                        <option value="7">Sử</option>
+                        <option value="8">Địa</option>
+                        <option value="9">GDCD</option>
+                        <option value="10">Tin học</option>
+                        <option value="11">Công nghệ</option>
+                        <option value="12">Thể dục</option>
+                      </select>
+                    </td>
+                    <td>
+                      Sinh hoạt lớp
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer fixed-bottom">
+        <div class="container-fluid">
+            <span class="text-muted">Nhóm 9 - TTCN - 2017</span>
+        </div>
+    </footer>
+
+    <script src="cdn/jquery-3.2.1.slim.min.js"></script>
+    <script src="cdn/popper.min.js"></script>
+    <script src="cdn/bootstrap.min.js"></script>
+  </body>
+</html>
